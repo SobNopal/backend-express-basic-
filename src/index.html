@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Test</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-box">
+        <form action="" class="formRegister" onsubmit="return validation">
+          <h2>Form Register</h2>
+          <p id="result"></p>
+          <div class="field">
+            <i class='bx bx-user'></i>
+            <input type="text" placeholder="Name" required />
+          </div>
+          <div class="field">
+            <i class='bx bx-envelope'></i>
+            <input type="email" placeholder="Email" required />
+          </div>
+          <div class="field">
+            <i class='bx bx-phone'></i>
+            <input type="tel" placeholder="Phone" required />
+          </div>
+          <!-- <div class="check">
+            <input type="checkbox" placeholder="Remember" required><span>remember me</span></input>
+        </div> -->
+          <div class="button">
+            <input type="submit" class="btn" onclick ="validation()" value="Register"/>
+          </div>
+        </form>
+      </div>
+      <div class="popup" id="pop">
+        <ion-icon name="checkmark-circle-outline"></ion-icon>
+        <h2>Thank you!</h2>
+        <p>Your were Registration  Successfully. Thanks!</p>
+        <a href="#"><button>OK</button></a>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
